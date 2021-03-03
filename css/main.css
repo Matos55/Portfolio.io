@@ -257,7 +257,8 @@ button:active {
 img.matos {
     display: block;
     margin: 0 auto;
-    height: 340px;
+    margin-top: 40px;
+    height: 300px;
     width: 340px;
     object-fit: cover;
     border: 2px solid var(--borderColor); 
@@ -274,14 +275,16 @@ img.matos {
     border-radius: 33px;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
     display: flex;
-    margin: -10% auto 20px auto;
-    position: relative;
+    margin: -235px auto 20px auto;
+    /* position: relative; */
     justify-content: space-evenly;
     align-items: center;
+    z-index: 1;
 }
 
 .about-container img {
-    height: 250px;
+    height: 200px;
+    border-radius: 27%;
 }
 
 .about-text {
@@ -289,20 +292,9 @@ img.matos {
 }
 
 .about-text p:nth-child(1) {
-    color: #403e3e;
-    font-family: myriad pro;
-    font-weight: bold;
-    font-size: 23px;
-    line-height: 0;
-}
-
-
-.about-text p:nth-child(1) {
     color: #3e3d3d;
-    font-family: myriad pro;
     font-weight: bold;
-    font-size: 13px;
-    line-height: 5px;
+    line-height: 0;
 }
 
 .about-text p:nth-child(3), 
@@ -312,15 +304,47 @@ img.matos {
     font-size: 16px;
 }
 
-.about-text button {
-    width: 120px;
-    height: 40px;
-    color: #FFFFFF;
-    outline: none;
-    border: none;
-    font-family: calibri;
-    background-color: #262525;
+.BG_Skills {
+   
+    background: linear-gradient(135deg, rgba(49,24,131,0.9) 0%, rgba(72,56,149,0.8) 100%), url("../images/nature.jpg") center fixed;
+    background-size: cover;
+    text-align: center;
+    width: 88%;
+    height: 50vh;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
+
+.FE {
+    padding: 10px;
+    padding-top: 30px;
+}
+
+.FE ul {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.FE ul li {
+    cursor: pointer;
+    color: yellowgreen;
+    font-size: 22px;
+}
+
+.BE ul {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(150px, 1fr));
+    gap: 20px;
+
+}
+
+.BE ul li {
+    cursor: pointer;
+    color: yellowgreen;
+    font-size: 22px;
+}
+
 
 
 /*********************/
@@ -513,5 +537,36 @@ footer p:nth-child(2) {
 	}
 
 
+    /*********************/
+    /* Section 2 */
+    /*********************/
+    
+    .BG_Skills {
+        height: 100%;
+    }
+
+    .FE ul {
+        display: flex;
+        /* grid-template-columns: repeat(auto, minmax(10px, 20px));
+        gap: 10px; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .BE {
+        padding-bottom: 40px;
+    }
+
+    .BE ul {
+        display: flex;
+        /* grid-template-columns: repeat(auto, minmax(10px, 20px));
+        gap: 10px; */
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        margin-right: 10px;
+    }
 
 }
