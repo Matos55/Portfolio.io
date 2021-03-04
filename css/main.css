@@ -175,6 +175,39 @@ nav ul {
     color: #2d2a2a; 
  }
 
+ /* mid column */
+.scrollmobile {
+   display: none;
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translate(262px, 798px);
+            transform: translate(262px, 798px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(262px, 830px);
+            transform: translate(262px, 830px);
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translate(262px, 798px);
+            transform: translate(262px, 798px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(262px, 830px);
+            transform: translate(262px, 830px);
+  }
+}
+
 
 /* left column */
 .text-container {
@@ -245,6 +278,13 @@ nav ul {
 button:active {
     transform: scale(1.1);
 }
+
+/* mid column */
+.scroll {
+    width: 30px;
+    margin-top: 2em;
+}
+
 
 /* right column */
 .model {
@@ -573,20 +613,20 @@ footer p:nth-child(2) {
 }
 
 @media screen and (max-width: 800px) {
+
+    /*********************/
+    /* Section 1 */
+    /*********************/
+
     .intro-wrapper {
         grid-template-columns: 1fr;
         grid-template-areas:
             'nav'
             'text-container' 
+            'scrollmobile'
             'model'
         ;
     }
-
-
-
-    /*********************/
-    /* Section 1 */
-    /*********************/
 
     /* show hamburder icon */
     .toggle {
@@ -642,7 +682,6 @@ footer p:nth-child(2) {
 		position: absolute;
 		right: 25px;
 		line-height: 0px;
-		
 	}
 
     /* when toggle class 'active' in nav, display: none ===> flex. To show */
@@ -650,6 +689,28 @@ footer p:nth-child(2) {
 		display: flex; /* cuz above we put display: 'none' to the 'nav ul' */
 	}
 
+    .scrollmobile {
+        display: grid;
+        grid-area: scrollmobile; 
+        place-content: center;
+    }
+
+    .meet {
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: bold;
+    }
+
+    .meet span {
+        margin-right: .5em;
+        align-self: center;
+    }
+
+    svg {
+        margin: 0 auto;
+    }
+    
 
     /*********************/
     /* Section 2 */
