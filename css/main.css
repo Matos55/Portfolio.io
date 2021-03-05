@@ -282,7 +282,7 @@ button:active {
 /* mid column */
 .scroll {
     width: 30px;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 
@@ -709,6 +709,7 @@ footer p:nth-child(2) {
 
     svg {
         margin: 0 auto;
+        text-rendering: optimizeSpeed;
     }
     
 
