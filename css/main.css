@@ -256,6 +256,7 @@ nav ul {
     font-size: 14px;
     outline: none;
     cursor: pointer;
+    transition: transform 0.1s linear;
 }
 
 .btn-left {
@@ -282,7 +283,7 @@ button:active {
 /* mid column */
 .scroll {
     width: 30px;
-    margin-top: 1em;
+    margin-top: 2em;
 }
 
 
@@ -326,6 +327,16 @@ img.matos {
 .about-container img {
     height: 200px;
     border-radius: 27%;
+    animation-name: spinning;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+	animation-direction: linear;
+}
+
+@keyframes spinning {
+	0%{transform: rotate(0deg);}
+    20%{transform: rotate(360deg);}
+	100%{transform: rotate(360deg);}
 }
 
 .about-text {
@@ -499,6 +510,11 @@ input.invalid + p{
     color: #fff;
     background-color: var(--buttonColor);
     border: none;
+    transition: transform 0.1s linear;
+}
+
+#submit-btn:active {
+    transform: translate(2px, 2px);
 }
 
 /*********************/
@@ -609,6 +625,10 @@ footer p:nth-child(2) {
 @media screen and (max-width: 1200px) {
     .main-container{
        width: 95%;
+    }
+
+    .about-container {
+        height: auto;
     }
 }
 
