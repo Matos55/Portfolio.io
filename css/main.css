@@ -157,8 +157,8 @@ nav ul {
 
 #navigation li {
     display: inline-block;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 /* #navigation li a {
@@ -745,7 +745,7 @@ footer p:nth-child(2) {
         justify-content: center;
         align-items: center;
         width: 95%;
-        height: 870px;
+        height: 1000px;
     }
 
     .about-container .about-text {
@@ -757,8 +757,8 @@ footer p:nth-child(2) {
         animation: none;
         opacity: 1;
         flex-shrink: 2;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 60px;
+        margin-bottom: 60px;
     }
     
     .BG_Skills {

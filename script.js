@@ -23,7 +23,7 @@ function navFunc() {
 const inputs = document.querySelectorAll('input');
 
 const patterns = {
-    name: /^[a-z\d]{5,12}$/i,
+    name: /^[a-z\d]{5,15}$/i,
     subject: /^[a-z\d]{5,30}$/i,
     email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,10})(\.[a-z]{2,8})?$/ 
 
