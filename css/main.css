@@ -333,6 +333,7 @@ img.matos {
 	animation-direction: linear;
 }
 
+/* trick to only spin 1.6 seconds and wait 6.4 seconds: 20% to 100% are equal */
 @keyframes spinning {
 	0%{transform: rotate(0deg);}
     20%{transform: rotate(360deg);}
@@ -646,6 +647,7 @@ footer p:nth-child(2) {
             'scrollmobile'
             'model'
         ;
+        
     }
 
     /* show hamburder icon */
@@ -736,6 +738,28 @@ footer p:nth-child(2) {
     /*********************/
     /* Section 2 */
     /*********************/
+
+    .about-container {
+        flex-flow: row wrap;
+        margin: -235px auto 50px auto;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+        height: 870px;
+    }
+
+    .about-container .about-text {
+        padding: 25px;
+    }
+
+    .about-container img {
+        transform: rotate(90deg);
+        animation: none;
+        opacity: 1;
+        flex-shrink: 2;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
     
     .BG_Skills {
         height: 100%;
