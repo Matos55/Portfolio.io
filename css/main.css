@@ -332,6 +332,7 @@ img.matos {
 	animation-duration: 8s;
 	animation-iteration-count: infinite;
 	animation-direction: linear;
+    margin: 25px;
 }
 
 /* trick to only spin 1.6 seconds and wait 6.4 seconds: 20% to 100% are equal */
@@ -597,7 +598,37 @@ footer p:nth-child(2) {
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+    width: auto;
+    border-radius: 10px;
 }
+
+.a-social-b .inner-container {
+    background: #07daa5;
+    padding: 1em;
+    border-radius: 10px;
+    width: 250px;
+    clip-path: circle(10% at 90% 20%);    /* clip path only show a bit and hide the rest of the element */
+    transition: clip-path .5s ease-in-out;
+    cursor: pointer;
+}
+
+.a-social-b .inner-container:hover {    
+    -webkit-clip-path: circle(75%);
+    clip-path: circle(75%);
+    background: #00B6FF;
+}
+
+.a-social-b .inner-container span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  transition: color .5s;
+  margin-right: 4%;
+}
+
+.a-social-b .inner-container:hover span {
+   color: rgba(255, 255, 255, 0);
+  }
 
 .a-social-b a {
     display: flex;
@@ -608,7 +639,8 @@ footer p:nth-child(2) {
     padding: 0;
     margin: 0;
     line-height: 0;
-    background-color: #FFFFFF;
+    /* background-color: #FFFFFF; */
+    /* background: #07daa5; */
     border: 1px solid cbcbcb;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
 }
@@ -626,11 +658,16 @@ footer p:nth-child(2) {
 
 @media screen and (max-width: 1200px) {
     .main-container{
-       width: 95%;
+       width: auto;
     }
 
     .about-container {
         height: auto;
+        width: 90%;
+    }
+
+    .about-text p:nth-child(1) {
+        line-height: initial;
     }
 }
 
@@ -746,16 +783,11 @@ footer p:nth-child(2) {
         justify-content: center;
         align-items: center;
         width: 95%;
-        height: 1200px;
+        height: auto;
     }
 
     .about-container .about-text {
         padding: 25px;
-    }
-
-    .about-text p:nth-child(1) {
-
-        line-height: initial;
     }
 
     .about-container img {
