@@ -13,22 +13,37 @@ function navFunc() {
 }
 
 // fix nav on mobile 
+// compares the height of windows height vs nav height, both, from the TOP
+// https://www.w3schools.com/jsref/prop_element_offsettop.asp
+let navbar = document.getElementById("navbar");
+let sticky = navbar.offsetTop;
+
 window.onscroll = function() { 
     myFunction()
 };
-        
-// compares the height of windows height vs nav height, both, from the TOP
-// https://www.w3schools.com/jsref/prop_element_offsettop.asp
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
 
 function myFunction() {
     if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
+        navbar.classList.add("sticky");
     } else {
-    navbar.classList.remove("sticky");
+        navbar.classList.remove("sticky");
     }
 }
+
+
+// Close Nav Mobile after clicking with "event delegation method" ===> faster and light coding
+let navigation = document.getElementById('navigation');
+
+navigation.addEventListener('click', (e) => {
+    // console.log(e.target.tagName);
+    if (e.target.tagName === 'A') {
+        navbar.classList.toggle('active');
+
+        let navIcon = document.querySelector(".toggle");
+        navIcon.classList.toggle('active');
+    }
+});
+
 
 /*********************/
 /* Section 4 */

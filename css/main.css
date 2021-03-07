@@ -169,11 +169,6 @@ nav ul {
     display: none;
 }
 
-.active {
-    font-weight: bold;
-    color: #2d2a2a; 
- }
-
  /* mid column */
 .scrollmobile {
    display: none;
@@ -349,7 +344,7 @@ img.matos {
 .about-text p:nth-child(1) {
     color: #3e3d3d;
     font-weight: bold;
-    line-height: 0;
+    /* line-height: 0; */
 }
 
 .about-text p:nth-child(3), 
@@ -408,7 +403,7 @@ img.matos {
     background-color: salmon;
 }
 
-.trainning {
+.training {
     display: grid;
     grid-template-columns: repeat(auto-fit, 320px); /* never let be below 320 px */
     gap: 20px;
@@ -696,6 +691,7 @@ footer > p:nth-child(2) {
         ;
     }
 
+    /* toggle nav fixed mobile */
     .sticky {
         position: fixed;
         top: 0;
@@ -763,6 +759,11 @@ footer > p:nth-child(2) {
     nav.active ul{
 		display: flex; /* cuz above we put display: 'none' to the 'nav ul' */
 	}
+
+    .active {
+        font-weight: bold;
+        color: #2d2a2a; 
+     }
 
     .scrollmobile {
         display: grid;
