@@ -12,8 +12,23 @@ function navFunc() {
     nav.classList.toggle('active');
 }
 
+// fix nav on mobile 
+window.onscroll = function() { 
+    myFunction()
+};
+        
+// compares the height of windows height vs nav height, both, from the TOP
+// https://www.w3schools.com/jsref/prop_element_offsettop.asp
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
 
-
+function myFunction() {
+    if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+    } else {
+    navbar.classList.remove("sticky");
+    }
+}
 
 /*********************/
 /* Section 4 */
