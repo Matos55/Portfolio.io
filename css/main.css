@@ -360,7 +360,7 @@ img.matos {
     background-size: cover;
     text-align: center;
     width: 88%;
-    height: 50vh;
+    height: auto;
     margin: 0 auto;
     margin-bottom: 50px;
 }
@@ -808,11 +808,17 @@ footer > p:nth-child(2) {
 
     .about-container img {
         transform: rotate(90deg);
-        animation: none;
+        /* animation: none; */
         opacity: 1;
         flex-shrink: 2;
         margin-top: 60px;
         margin-bottom: 60px;
+    }
+    
+    @keyframes spinning {
+        0%{transform: rotate(90deg);}
+        30%{transform: rotate(450deg);}
+        100%{transform: rotate(450deg);}
     }
     
     .BG_Skills {
@@ -821,13 +827,15 @@ footer > p:nth-child(2) {
 
     .FE ul {
         display: flex;
-        /* grid-template-columns: repeat(auto, minmax(10px, 20px));
-        gap: 10px; */
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 30px;
+    }
+
+    .FE ul li {
+        flex: 0 0 calc(40%);  /* flex: GROW | SHRINK | BASIS. We are using the BASIS */
     }
 
     .BE {
@@ -835,16 +843,14 @@ footer > p:nth-child(2) {
     }
 
     .BE ul {
-        display: flex;
-        /* grid-template-columns: repeat(auto, minmax(10px, 20px));
-        gap: 10px; */
+        display: grid;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        margin: 0 auto;
-        margin-right: 10px;
-        gap: 30px;
+        grid-gap: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        margin-right: 20px;
     }
 
 }
