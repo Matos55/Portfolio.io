@@ -678,6 +678,7 @@ footer > p:nth-child(2) {
     clip-path: circle(10% at 90% 20%);    /* clip path only show a bit and hide the rest of the element */
     transition: clip-path .5s ease-in-out;
     cursor: pointer;
+    z-index: 999;
 }
 
 .a-info-b:hover {    
