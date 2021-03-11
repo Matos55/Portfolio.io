@@ -402,6 +402,7 @@ img.matos {
 .s3 {
     background-color: salmon;
     padding: 50px 0 100px 0;
+    overflow: auto;
 }
 
 .s3 h3 {
