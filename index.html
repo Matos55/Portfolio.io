@@ -151,27 +151,29 @@
     <!-- Section 3:  Personal Relevant Works -->
     <!-- ********************************************************** -->
 
-    <section id="trainning" class="s3"> 
+    <section class="s3"> 
 
-        <h3 style="text-align: center;">Personal Relevant Works</h3>
+        <h3>Personal Relevant Works</h3>
 
         <div class="training">
 
             <div class="post">
-                <div>
-                    <img class="thumbnail" src="images/skill.jpg" alt="">
-                    <img class="thumbnail" src="images/FE/image001.png" alt="">
-                    <img class="thumbnail" src="images/FE/image002.png" alt="">
-                    <img class="thumbnail" src="images/FE/image003.png" alt="">
-                    <img class="thumbnail" src="images/FE/image004.png" alt="">
+                <div class="picframe">
+                    <img class="thumbnail1" src="images/FE/image001.png" alt="thumb1">
+                    <img class="thumbnail2" src="images/FE/image002.png" alt="thumb2">
+                    <img class="thumbnail3" src="images/FE/image003.png" alt="thumb3">
+                    <img class="thumbnail4" src="images/FE/image004.png" alt="thumb4">
                 </div>
                 <div class="post-preview">
-                    <h6 class="post-title">Book By Author</h6>
-                    <p class="post-intro">This is a sentence. Some more text</p>
-                    <a href="post.html">Read More</a>
+                    <h5 class="post-fe">Front-End</h5>
+                    <h6 class="post-title">* Book List by AUTHOR</h6>
+                    <h6 class="post-title">* Book's Details by ID</h6>
+                    <p class="post-intro">> Explore the basics of Angular2+</p>
+                    <p class="post-intro">> Consume API <a href="https://openlibrary.org/developers/api">OpenLibrary</a></p>
+                    <p></p>
+                    <a href="https://github.com/Matos55/FrontEnd_Book_Angular" target="_blank" class="repository">Repository</a>
                 </div>
             </div>
-
         </div>
 
     </section>
@@ -187,20 +189,20 @@
 
             <form id="contact-form" action="">
 
-                <label>Name</label>
-                <input class="input-field" type="text" name="name" required>
+                <label for="name">Name</label>
+                <input id="name" class="input-field" type="text" name="name" required>
                 <p>Name must be and contain: 5 - 12 characters</p>
 
-                <label>Subject</label>
-                <input class="input-field" type="text" name="subject" required>
+                <label for="subject">Subject</label>
+                <input id="subject" class="input-field" type="text" name="subject" required>
                 <p>Subject must be and contain: 5 - 30 characters</p>
 
-                <label>Email</label>
-                <input class="input-field" type="text" name="email" required>
+                <label for="email">Email</label>
+                <input id="email" class="input-field" type="text" name="email" required>
                 <p>Email must be a valid email.  Ex: me@mydomain.com</p>
 
-                <label>Message</label>
-                <textarea class="input-field" name="message"></textarea>
+                <label for="message">Message</label>
+                <textarea id="message" class="input-field" name="message"></textarea>
 
                 <input id="submit-btn" type="submit" value="Send">
             </form>

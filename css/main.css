@@ -401,44 +401,123 @@ img.matos {
 
 .s3 {
     background-color: salmon;
+    padding: 50px 0 100px 0;
+}
+
+.s3 h3 {
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 .training {
     display: grid;
-    grid-template-columns: repeat(auto-fit, 320px); /* never let be below 320 px */
-    gap: 20px;
+    grid-template-columns: repeat(auto, 320px);
+    gap: 20px; 
     justify-content: center;
     padding-bottom: 50px;
 }
 
 .post {
     border: 1px solid var(--borderColor);
-
     -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    /* margin-top: 100px; */
 }
 
-.thumbnail {
-    display: block;
-    width: 100%;
+.picframe {
+    position: relative; 
+}
+
+.thumbnail1 {
+    height: 170px;
+    position: absolute;
+    left: 80%;
+    object-fit: cover;
+    transform: translate(20px, -1px);
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.6);
+    z-index: 12;
+    
+} 
+
+.thumbnail2 {
+    height: 100px;
+    position: absolute; 
+    object-fit: cover;
+    transform: translate(-76px, 267px);
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.6);
+    z-index: 13;
+}
+
+.thumbnail3 {
     height: 300px;
-    /* object-fit: cover; */
+    position: absolute; 
+    width: 280px;
+    left: 50%;
+    object-fit: cover;
+    transform: translate(-50%, -14%); 
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.6);
+    z-index: 10;
+}
+
+.thumbnail4 {
+    height: 300px;
+    position: absolute;
+    left: 57%;
+    transform: translate(0%, 22.5%); 
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.6);
+    z-index: 11;
 }
 
 .post-preview {
     background-color: #fff;
+    width: 280px;
     padding: 15px;
+    padding-top: 400px;
+}
+
+.post-fe {
+    /* margin: 0; */
 }
 
 .post-title {
     color: black;
     margin: 0;
+    font-family: 'Russo One', sans-serif;
 }
 
 .post-intro {
     color: #4b5156;
     font-size: 14px;
+}
+
+.post-preview h5 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.post-preview p:nth-child(4) {
+    margin-top: 30px;
+    line-height: 0;
+}
+
+.post-preview p:nth-child(5) {
+    line-height: 5px;
+}
+
+.post-preview .repository {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    color: #fff;
+    background: linear-gradient(45deg, #87adfe, #ff77cd);
+    border-radius: 6px;
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+}
+
+.post-preview .repository:hover {
+    filter: brightness(110%) saturate(180%);
 }
 
 /*********************/
