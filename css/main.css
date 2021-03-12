@@ -382,6 +382,10 @@ img.matos {
     font-size: 22px;
 }
 
+.BE {
+    padding-bottom: 30px;
+}
+
 .BE ul {
     display: grid;
     grid-template-columns: repeat(4, minmax(150px, 1fr));
@@ -411,8 +415,8 @@ img.matos {
 
 .training {
     display: grid;
-    grid-template-columns: repeat(auto, 320px);
-    gap: 20px; 
+    grid-template-columns: repeat(2, 311px);
+    gap: 250px; 
     justify-content: center;
     padding-bottom: 50px;
 }
