@@ -427,6 +427,7 @@ img.matos {
 	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
     width: auto;
+    max-height: 600px;
 }
 
 .picframe {
@@ -526,6 +527,44 @@ img.matos {
 .post-preview .repository:hover {
     filter: brightness(110%) saturate(180%);
 }
+
+.post2 {
+    border: 1px solid var(--borderColor);
+    -webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
+    width: auto;
+}
+
+.thumbnail5 {
+    height: auto;
+    position: absolute; 
+    width: 310px;
+    left: 50%;
+    object-fit: cover;
+    transform: translate(-50%, -8%); 
+    box-shadow: 2px 2px 20px rgba(0,0,0,0.6);
+    z-index: 10; 
+}
+
+.post-preview .repository2 {
+    display: block;
+    text-align: center;
+    margin: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    color: #fff;
+   
+    background: linear-gradient(45deg, #90cf2a, #75a3b6);
+    border-radius: 6px;
+    box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.15);
+}
+
+.post-preview .repository2:hover {
+    filter: brightness(110%) saturate(180%);
+}  
+
+
 
 /*********************/
 /* Section 4 */
@@ -945,6 +984,9 @@ footer > p:nth-child(2) {
     /* Section 3 Mobile */
     /*********************/
 
+    .training {
+        grid-template-columns: repeat(1, 311px);
+    }
     
     .thumbnail1 {
         transform: translate(-39.5%, -1%); 
